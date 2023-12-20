@@ -5,9 +5,12 @@ RUN apt-get install nodejs npm -y
 
 WORKDIR /opt
 
+COPY package.json .
+RUN npm install
+
 COPY . . 
 
-RUN npm install
+
 
 EXPOSE 3000
 
