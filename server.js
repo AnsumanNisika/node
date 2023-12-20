@@ -23,7 +23,7 @@ app.use('/courses', itemsRouter);
 
 // default URL to API
 app.use('/', function(req, res) {
-    res.send('Welcome to Node Application1');
+    res.send('Welcome to Node Application : testing');
 });
 
 const server = http.createServer(app);
